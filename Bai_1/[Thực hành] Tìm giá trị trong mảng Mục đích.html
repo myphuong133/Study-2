@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tìm giá trị trong mảng</title>
+</head>
+<body>
+<script>
+  let a = prompt('kiểm tra 1 số từ 0 đến 10')
+  let c = 0
+  let b
+  let x = []
+  for (i=0;i<5;i++){
+    b = Math.floor(Math.random()*11)
+    x[c] = b
+      c++
+      b = '';
+  }
+  for (l=1;l<x.length;l++){
+      if (a == x[l]) {
+          alert("giá trị" + a + "found at" + l ) ;
+      } alert('Error!')
+  }
+
+
+
+</script>
+</body>
+</html>
