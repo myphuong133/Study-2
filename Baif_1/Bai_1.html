@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hàm kiểm tra số nguyên tố</title>
+</head>
+<body>
+<script>
+  function checkSnt(num){
+
+    if (num<2){ return -1 }
+    else {
+      for (i = 2; i < num; i++) {
+        if (num % i === 0) {
+          return -1
+        } else return num
+      }
+    }
+  }
+  let a = +prompt('Nhập số cần check')
+
+  if (checkSnt(a) === -1 ) {
+    alert('khong phai snt')
+  }
+  else {
+    alert('la snt')
+  }
+
+</script>
+
+</body>
+</html>
