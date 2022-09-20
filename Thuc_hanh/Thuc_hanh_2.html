@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<h2>Chuyển đổi nhiệt độ</h2>
+ <br>
+F <input type="number" id="in" oninput="change(value)" > <br>
+C : <p id="output" > </p>
+
+<script>
+    function change(nhietdo){
+        document.getElementById("output").innerHTML = (nhietdo - 32)/1.8
+    }
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
