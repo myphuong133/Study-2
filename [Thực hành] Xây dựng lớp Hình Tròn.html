@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Xây dựng lớp Hình Tròn</title>
+</head>
+<body>
+<script>
+  let circle = function (R){
+    this.R = R
+    this.getR = function (){
+            return R;
+    }
+    this.getArea = function (){
+      return Math.PI * R*R
+    }
+  }
+  let Circle = new circle(2)
+  let R = Circle.getR();
+  let area = Circle.getArea()
+  alert( 'qq' + R +'qcq'+ area)
+</script>
+</body>
+</html>
