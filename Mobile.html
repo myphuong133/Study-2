@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dien thoai</title>
+</head>
+<body>
+<script>
+    var x = 0
+    var mess = ''
+  var Moblie = function (id,battery) {
+
+      this.id = id
+      this.battery = battery;
+
+    this.turnOn = function () {
+        alert('Chào mừng quay trở lại ')
+        this.battery = x
+    }
+    this.turnOff = function () {
+         if (this.battery>0) {
+             alert('Tạm biệt ')
+             this.battery = 0
+         }
+    }
+    this.CheckBattery = function (){
+          alert(this.battery)
+    }
+    this.Charge = function (){
+        if (this.battery<100) {
+            x = this.battery++
+        }
+    }
+    this.SendMess = function (){
+        if (this.battery>0) {
+            mess = prompt()
+        }
+    }
+
+
+  }
+  var mobile = new Moblie(1,10);
+  function main1() {
+      mobile.turnOn()
+  }
+  function main2(){
+      mobile.turnOff()
+  }
+  function main3(){
+      mobile.CheckBattery()
+  }
+  function main4(){
+      mobile.SendMess()
+  }
+  function main5(){
+      mobile.Charge()
+  }
+  function main6(){
+      alert(mess)
+      mess = ''
+  }
+
+
+</script>
+
+
+
+
+
+
+<table>
+  <tr> <th>Iphone 14 pro Max của Tùng</th>
+       <th>Nokia</th>
+  </tr>
+  <tr> <th><button onclick="main3()" >Pin</button></th>
+
+  </tr>
+  <tr> <th><button onclick="main1()" >Bật</button></th>
+
+  </tr>
+  <tr> <th><button onclick="main2()">Tắt</button></th>
+
+  </tr>
+  <tr> <th><button onclick="main4()" >Mess</button></th>
+
+  </tr>
+    <tr> <th><button onclick="main5()" >Sạc pin</button></th>
+
+    </tr>
+  <tr> <th></th>
+      <th><button onclick="main6()">Thư đến</button></th>
+
+  </tr>
+</table>
+</body>
+</html>
